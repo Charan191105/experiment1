@@ -7,7 +7,7 @@ def register():
     if request.method == 'POST':
         name = request.form.get('name')
         email = request.form.get('email')
-        password = request.form.get('password')
+        password = request.form.get('passwordddd')
         return render_template('success.html', name=name)
     return render_template('register.html')
 
